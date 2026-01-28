@@ -1,0 +1,16 @@
+.content {
+    width: 100%;
+    padding: 0 4.8rem;
+}
+
+.path-intro {
+    background-image: url(images/path-green.svg);
+    background-repeat: no-repeat;
+    background-position: top left -4rem;
+    background-size: auto 100%;
+}
+
+.badge-1 {
+    bottom: 6.4rem;
+    left: 42rem;
+}

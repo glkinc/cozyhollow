@@ -1,0 +1,178 @@
+.content {
+    width: 100%;
+    padding: 0 1.6rem;
+}
+
+.body-lg {
+    font-size: 1.6rem;
+}
+
+.header {
+    padding: 1.6rem;
+}
+
+.logo-small {
+    width: 6.4rem;
+    height: 6.4rem;
+}
+
+.cloud {
+    width: 30%;
+}
+
+.hero {
+  height: 55vh;
+  min-height: 55rem;
+}
+
+.hero-content {
+    max-width: 100%;
+    width: 70%;
+    max-width: 24rem;
+}
+
+.hero-content .gap-md {
+    gap: 1.6rem;
+}
+
+.hero-content .body-lg {
+    font-size: 1.4rem;
+}
+
+.layer-1 {
+    background-size: 100rem auto;
+}
+
+.layer-2 {
+    background-size: 80rem auto;
+}
+
+.layer-3 {
+    background-size: 100rem auto;
+}
+
+.hero-bottom {
+    height: 36rem;
+    z-index: 10;
+}
+
+.hero-bottom svg {
+    width: 100rem;
+    left: -20rem;
+    transform: translateX(0);
+}
+
+.path-intro {
+    background-image: none;
+}
+
+.path-intro img {
+    width: 100%;
+    display: block;
+}
+
+.path-faq,
+.path-story {
+    background-image: none;
+}
+
+.badge-1,
+.badge-2,
+.badge-3 {
+     width: 5.6rem;
+}
+
+.badge-1 {
+    bottom: inherit;
+    left: inherit;
+    right: 2.4rem;
+    width: 5.6rem !important;
+}
+
+.badge-2 {
+	top: inherit;
+    bottom: 0.8rem;
+	left: 50%;
+    transform: translateX(-50%);
+}
+
+.badge-3 {
+	top: inherit;
+    bottom: 1.6rem;
+	left: 50%;
+    transform: translateX(-50%);
+}
+
+.flex-container.location-grid {
+	flex-flow: row wrap;
+	row-gap: var(--size-2);
+    justify-content: center;
+    text-align: center;
+    margin-top: 2.4rem;
+}
+
+.flex-container.location-grid .col {
+	width: 100%;
+}
+
+.flex-container.location-grid .col .body-lg {
+
+}
+
+ul.legal {
+    font-size: 1.6rem;
+}
+
+.footer-logo {
+    width: 20rem;
+}
+
+.footer {
+    text-align: center;
+}
+
+ul.social {
+    justify-content: center;
+}
+
+.footer .justify-between {
+    justify-content: center !important;
+}
+
+.padding-top-4xl { padding-top: var(--layout-padding-md); }
+.padding-bottom-5xl { padding-bottom: var(--layout-padding-md); }
+
+.btn {
+    width: 100%;
+    text-align: center;
+    display: block;
+    padding: 0.8rem 2.4rem;
+    font-size: 1.4rem;
+}
+
+.heading-md {
+    font-size: var(--heading--sm);
+    line-height: 125%;
+    font-weight: 300;
+}
+
+.heading-lg {
+    font-size: var(--heading--md);
+    line-height: 125%;
+    font-weight: 300;
+}
+
+.heading-xl {
+    font-size: var(--heading--lg);
+    line-height: 125%;
+    font-weight: 300;
+}
+
+.accordion-header {
+    padding: 1.6rem 2.4rem;
+}
+
+.modal-content {
+    max-width: 80%;
+    width: 80%;
+}

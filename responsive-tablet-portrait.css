@@ -1,0 +1,96 @@
+.content {
+    width: 100%;
+    padding: 0 2.4rem;
+}
+
+.header {
+    padding: 2.4rem;
+}
+
+.hero {
+  height: 90vh;
+  min-height: 76rem;
+}
+
+.hero-content {
+    max-width: 36rem;
+}
+
+.layer-1 {
+    background-size: 140rem auto;
+}
+
+.layer-2 {
+    background-size: 140rem auto;
+}
+
+.layer-3 {
+    background-size: 140rem auto;
+}
+
+.hero-bottom {
+    height: 57rem;
+    z-index: 10;
+}
+
+.hero-bottom svg {
+    display: block;
+    width: 160rem;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.path-intro {
+    background-image: url(images/path-green.svg);
+    background-repeat: no-repeat;
+    background-position: top left -4rem;
+    background-size: auto 100%;
+}
+
+.badge-1,
+.badge-2,
+.badge-3 {
+     width: 6.4rem;
+}
+
+.badge-1 {
+    bottom: 6.4rem;
+    left: 40rem;
+}
+
+.badge-2 {
+	top: inherit;
+    bottom: 1.6rem;
+    right: 1.6rem;
+	left: inherit;
+}
+
+.badge-3 {
+	top: inherit;
+    bottom: 1.6rem;
+    right: 2.4rem;
+	left: inherit;
+}
+
+.flex-container.location-grid {
+	flex-flow: row wrap;
+	row-gap: var(--size-2);
+}
+
+.flex-container.location-grid .col:first-child {
+	width: 100%;
+}
+
+.flex-container.location-grid .col .body-lg {
+	font-size: 1.6rem;
+}
+
+ul.legal {
+    font-size: 1.6rem;
+}
+
+.footer-logo {
+    width: 20rem;
+}
