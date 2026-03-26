@@ -455,10 +455,6 @@ body {
     font-family: "Source Sans 3", sans-serif;
 }
 
-p {
-
-}
-
 .heading {
     display: block;
     font-family: "Chewy", system-ui;    
@@ -535,14 +531,6 @@ a:hover {
 :focus {
   outline: 2px solid var(--base-ochre-400);
   outline-offset: 2px;
-}
-
-hr {
-
-}
-
-blockquote {
-
 }
 
 ::selection {
@@ -623,10 +611,6 @@ sub {
 
 .header.nav-up {
     top: -12rem;
-}
-
-.header.solid {
-    /* background: var(--role-background-dark-primary); */
 }
 
 .logo-small {
@@ -890,6 +874,12 @@ ul.legal li a:hover {
     background-repeat: no-repeat;
     background-position: bottom -4.8rem left;
     background-size: 29rem 33rem; 
+}
+
+.path-mailing {
+    display: block;
+    width: 100%;
+    height: 100% !important;
 }
 
 .relative {
@@ -1192,8 +1182,74 @@ body.no-scroll {
    5. FORM STYLES
 \* ========================================================================== */
 
+.mailing-list-form {
+    display: block;
+    width: 100%;
+}
+
+.newsletter-form {
+    position: relative;
+}
+
+input[type=email].newsletter-input {
+    width: 100%;
+    height: 6.4rem;
+    border-radius: 100px;
+    position: relative;
+    z-index: 1;
+    color: var(--role-text-primary);
+}
+
+input[type=email].newsletter-input::placeholder {
+    opacity: 1;
+}
+						
+.newsletter-button {
+    position: absolute;
+    right: 0.4rem;
+    top: 0.4rem;
+    z-index: 5;
+
+    display: inline-flex;
+    flex-direction: row;
+    cursor: pointer;
+    transition: ease-in-out 300ms;
+    align-items: center;
+    gap: var(--layout-gap-xxs);
+    padding: 0 4.8rem;
+    height: 5.6rem;
+    border-radius: 100px;
+    background-color: var(--base-ochre-500);
+    color: var(--base-white);
+    font-size: var(--label--md);
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 2px solid var(--base-ochre-500);
+}
+
+.newsletter-button:hover {
+    background-color: var(--role-background-light-primary);
+    color: var(--role-text-primary);
+    border-color: var(--base-ochre-500);
+}
+
+.newsletter-success,
+.newsletter-error {
+    text-align: right;
+    padding: 1.6rem;
+}
+
+.input--hidden {
+    display: none;
+    visibility: hidden;
+    position: absolute;
+    left: -9999px;
+}
+
 input {
 	-webkit-appearance: none;
+    appearance: none;
 	border-radius: 0;
 }
 
@@ -1207,7 +1263,7 @@ input[type=text],
 input[type=password],
 input[type=email],
 input[type=tel] {
-	padding: 15px 20px !important;
+	padding: 1.6rem 3.2rem !important;
 	margin: 0 0 5px 0;
 	border-radius: 0px;
 	background-color: #fff;

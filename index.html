@@ -181,6 +181,54 @@
 		</div>
 	</section>
 
+	<!-- MAILING LIST -->
+	<section class="section bg-dark-secondary">
+		<div class="content">
+			<div class="columns wrap-xs">
+				<div class="col col-lg-9 col-md-8 col-sm-12 col-xs-12 flex-container flex-col gap-sm padding-top-lg padding-bottom-lg">
+					<h2 class="heading heading-lg">Join Our Mailing List</h2>
+
+					<p>Stay in the loop with everything happening at The Cozy Hollow.</p>
+
+					<div class="mailing-list-form">
+					<form 
+						id="newsletter-form" 
+						class="newsletter-form"
+						action="https://b269bda6.sibforms.com/serve/MUIFAKTV8T7qEE8JR4LO1GPh4uOagDwKvrjsgRNonPCUQNL7ykXcm5VodkWX9N5M8m0KfJQymqiEgJG5z8V3Bp-gosSYqhxYc291j2jVti37mujXkmhDFICuWD6s6PQR46g7x5JBdAz6GXbnXjwQmWD9F3yFI7FauDRKDTRDHSVtmOs-rP02CObN7cOdSnOPDbarZNeAvCzUoUnV_A=="
+						method="POST"
+					>
+						<input
+						type="email"
+						id="newsletter-email"
+						name="EMAIL"
+						placeholder="Enter your email"
+						required
+						class="newsletter-input"
+						/>
+						<button type="submit" class="newsletter-button">
+						Subscribe
+						</button>
+						<!-- Anti-bot hidden field -->
+						<input type="text" name="email_address_check" value="" class="input--hidden">
+						<input type="hidden" name="locale" value="en">
+						<input type="hidden" name="html_type" value="simple">
+					</form>
+
+					<p id="newsletter-success" class="newsletter-success body-lg" style="display:none;">
+						Thanks for subscribing!
+					</p>
+					<p id="newsletter-error" class="newsletter-error body-lg" style="display:none;">
+						Something went wrong. Please try again.
+					</p>
+					</div>
+				</div>
+				<div class="col col-lg-3 col-md-4 path-mailing">
+					<img src="images/path-mailing-list.svg" alt="" />
+				</div>
+			</div>
+		</div>
+	</section>
+
 	<!-- LOCATION -->
 	<section class="section padding-top-lg padding-bottom-lg bg-light-primary">
 		<div class="content">
@@ -398,6 +446,41 @@
 		</div>
 	</div>
 </footer>
+
+<script>
+  const form = document.getElementById("newsletter-form");
+  const emailInput = document.getElementById("newsletter-email");
+  const successMsg = document.getElementById("newsletter-success");
+  const errorMsg = document.getElementById("newsletter-error");
+
+  form.addEventListener("submit", async function (e) {
+    e.preventDefault();
+
+    successMsg.style.display = "none";
+    errorMsg.style.display = "none";
+
+    const formAction = form.getAttribute("action");
+
+    const data = new FormData();
+    data.append("EMAIL", emailInput.value);
+    data.append("email_address_check", "");
+    data.append("locale", "en");
+    data.append("html_type", "simple");
+
+    try {
+      await fetch(formAction, {
+        method: "POST",
+        body: data,
+        mode: "no-cors",
+      });
+
+      successMsg.style.display = "block";
+      form.reset();
+    } catch (err) {
+      errorMsg.style.display = "block";
+    }
+  });
+</script>
 
 </body>
 </html>

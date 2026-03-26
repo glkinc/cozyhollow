@@ -176,3 +176,7 @@ ul.social {
     max-width: 80%;
     width: 80%;
 }
+
+.path-mailing {
+    display: none;
+}

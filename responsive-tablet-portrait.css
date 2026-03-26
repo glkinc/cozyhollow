@@ -49,6 +49,10 @@
     background-size: auto 100%;
 }
 
+.path-mailing {
+    display: none;
+}
+
 .badge-1,
 .badge-2,
 .badge-3 {
