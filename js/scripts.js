@@ -83,7 +83,10 @@ $(document).ready(function()
 
 	// SMOOTH SCROLL
 	$('a[href^="#"]').on('click', function (e) {
-		const target = $(this.getAttribute('href'));
+		const href = this.getAttribute('href');
+		if (href === '#') return;
+
+		const target = $(href);
 		if (target.length) {
 			e.preventDefault();
 			$('html, body').animate({ scrollTop: target.offset().top - 100 }, 500, 'swing');
