@@ -94,12 +94,39 @@
 	</div>
 
 	<!-- MENU -->
-	<nav class="menu" style="display: none;">
+	<nav class="menu">
 		<ul>
-			<li><a href="#" class="btn" target="_blank" rel="noreferrer">Get Tickets</a></li>
+			<li><a href="#about">About</a></li>
+			<li><a href="#location">Location</a></li>
+			<li><a href="#pricing">Pricing</a></li>
+			<li><a href="#faq">FAQ</a></li>
+			<li><a href="#story">Our Story</a></li>
 		</ul>
+		<a href="https://thecozyhollow.setmore.com?utm_source=qr-code&utm_medium=more-share-bp" class="btn" target="_blank" rel="noreferrer">Book Your Visit</a>
 	</nav>
+
+	<!-- RESPONSIVE HEADER CONTROLS -->
+	<div class="header-right">
+		<a href="https://thecozyhollow.setmore.com?utm_source=qr-code&utm_medium=more-share-bp" class="btn btn-sm" target="_blank" rel="noreferrer">Book Your Visit</a>
+		<button class="nav-hamburger" aria-label="Open menu" aria-expanded="false">
+			<span></span>
+			<span></span>
+			<span></span>
+		</button>
+	</div>
+
 </header>
+
+<!-- FULLSCREEN NAV OVERLAY -->
+<div class="nav-overlay" id="navOverlay" aria-hidden="true">
+	<ul>
+		<li><a href="#about" class="nav-overlay-link">About</a></li>
+		<li><a href="#location" class="nav-overlay-link">Location</a></li>
+		<li><a href="#pricing" class="nav-overlay-link">Pricing</a></li>
+		<li><a href="#faq" class="nav-overlay-link">FAQ</a></li>
+		<li><a href="#story" class="nav-overlay-link">Our Story</a></li>
+	</ul>
+</div>
 
 <main class="main" id="content">
 
@@ -150,12 +177,12 @@
 	</section> 
 	
 	<!-- INTRO -->
-	<section class="section path-intro padding-top-4xl padding-bottom-5xl bg-dark-primary relative">
+	<section id="about" class="section path-intro padding-top-4xl padding-bottom-5xl bg-dark-primary relative">
 		
 		<img src="images/ico-squirel.svg" alt="" class="badge-1" />
 		
 		<div class="content">
-			<div class="columns justify-between items-center wrap-xs">
+			<div class="columns columns-carousel justify-between items-center wrap-xs">
 				<div class="col col-lg-5">
 					<div class="flex-container flex-col gap-xs">
 						<div class="flex-container flex-col gap-xxs">
@@ -164,9 +191,10 @@
 						</div>
 						<div class="flex-container flex-col gap-md">
 							<p>Inside The Cozy Hollow</p>
+							
 							<p>The Cozy Hollow is a child centered, nature inspired, play based space designed for young children and their caregivers who love them. We believe children learn best through open ended play, creativity, movement, and connection, both indoors and outdoors.</p>
-							<p>Our space is intentionally calm, warm, and thoughtfully designed to support imaginative play, sensory exploration, creative arts and social connection. There are no screens, no overstimulation, and no pressure to perform. Just time and space for children to be children.</p>
-							<p>The Cozy Hollow offers 2 drop-in play sessions daily from Wednesday to Saturday. Whether you’re coming for free play, creative exploration, or simply a cozy place to spend time together, you’re welcome here.</p>
+							<p>Our space is intentionally calm, warm, and thoughtfully designed to support imaginative play, sensory exploration, creative arts and social connection. There are no screens, no overstimulation, and no pressure to perform. Just time and space for children to be children. We also keep our sessions intentionally small, so there's room to explore and play without the busy, crowded feeling of larger spaces which gives families a calmer environment to truly settle in and enjoy together.</p>
+							<p>The Cozy Hollow offers 2 drop-in play sessions daily from Wednesday to Saturday. Because spaces are limited, sessions can fill quickly, especially during popular times, so we recommend booking ahead to reserve your spot. Whether you're coming for free play, creative exploration, or simply a cozy place to spend time together, you're welcome here.</p>
 							<div class="clear sm"></div>
 							<div style="display: none;">
 								<a href="#" class="btn" target="_blank" rel="noreferrer">Get Tickets</a>
@@ -175,7 +203,46 @@
 					</div>
 				</div>
 				<div class="col col-lg-6">
-					<img src="images/space.png" alt="The Cozy Hollow" />
+					<div class="polaroid-carousel polaroid-carousel--5">
+						<div class="polaroid-carousel-slide"><img src="images/carousel/ch1.jpg" alt="The Cozy Hollow" /></div>
+						<div class="polaroid-carousel-slide"><img src="images/carousel/ch2.jpg" alt="The Cozy Hollow" /></div>
+						<div class="polaroid-carousel-slide"><img src="images/carousel/ch3.jpg" alt="The Cozy Hollow" /></div>
+						<div class="polaroid-carousel-slide"><img src="images/carousel/ch4.jpg" alt="The Cozy Hollow" /></div>
+						<div class="polaroid-carousel-slide"><img src="images/carousel/ch5.jpg" alt="The Cozy Hollow" /></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- BOOK YOUR VISIT -->
+	<section class="section padding-top-lg padding-bottom-xl bg-dark-primary">
+		<div class="content">
+			<h2 class="heading heading-lg">Book your visit</h2>
+			<div class="clear sm"></div>
+			<div class="book-visit">
+				<div class="book-visit-left">
+					<p class="body-lg">A cozy, calm space for little ones to play, explore, and connect through open-ended play. Join us for a drop-in session designed for children and the grownups who love them.</p>
+					<div class="book-visit-actions">
+						<a href="https://thecozyhollow.setmore.com?utm_source=qr-code&utm_medium=more-share-bp" class="btn" target="_blank" rel="noreferrer">Book Now</a>
+						<a href="https://docs.google.com/forms/d/e/1FAIpQLSdQxgSB4wp3cjpbWvyn80n91BL8XkCa0NOPyDZsnU_AO4vjKA/viewform?usp=publish-editor" class="btn-tertiary" target="_blank" rel="noreferrer">Sign Our Waiver <img src="images/ico-arrow-right-orange.svg" alt="" /></a>
+					</div>
+					<p class="body-sm">Help us make check-in smooth and easy by completing your waiver ahead of time. Before completing the waiver please read “<a href="#story" class="scroll invert-link">Ways Of The Hollow</a>”.</p>
+					<div class="clear xs"></div>
+
+					<p class="heading heading-md">Pre-Paid Options</p>
+					<p>For pre-paid options (Card, Pass, Memberships) <a href="https://thecozyhollow.setmore.com/classes/9fea7908-38be-4241-ae12-5088c520615c" class="invert-link" target="_blank" rel="noreferrer">Purchase them here</a>.
+
+				</div>
+				<div class="notice-card">
+					<div class="notice-card-header">
+						<img src="images/ico-megaphone.svg" alt="" />
+						Important Booking Note
+					</div>
+					<p class="heading heading-md">This Booking Gurantees Entry for Your Family Group</p>
+					<p>Your reservation includes prepaid admission for <strong>1 child and 1 adult</strong>, securing your family’s entry for the selected session time.</p>
+					<p>Additional children and adults from your family group can be added in person upon arrival for an additional fee.</p>
+					<p>Please enter the total number of adults and children attending in the booking form, along with any additional information you think we should know before or during your visit.</p>
 				</div>
 			</div>
 		</div>
@@ -230,29 +297,74 @@
 	</section>
 
 	<!-- LOCATION -->
-	<section class="section padding-top-lg padding-bottom-lg bg-light-primary">
+	<section id="location" class="section padding-top-lg padding-bottom-lg bg-light-primary">
 		<div class="content">
 			<h2 class="heading heading-lg">Find The Cozy Hollow</h2>
 			<div class="clear sm"></div>
 			<div class="columns wrap-xs">
 				<div class="col col-lg-6 flex-container flex-col gap-sm">
 					<p class="body-lg">The Cozy Hollow is located in Dundas, Ontario, close to natural green space and forested areas.</p>
-					<p>Full address and parking details will be shared closer to opening.</p>
-					<p>If you have questions about sessions, accessibility, or programming, feel free to reach out. We’re happy to help.</p>
+
+					<p>Just like a cozy tree hollow tucked away in the woods, The Cozy Hollow is a little hidden away.</p>
+					<p>Our entrance can be easy to miss if you don’t know where to look, so please read the directions below carefully before you arrive.</p>
+					<p>Think of it as the first little part of your adventure. Once you find your way to the <span class="sign-tag">Cozy Hollow This Way <svg class="sign-tag-arrow" viewBox="0 0 24 24" aria-hidden="true"><line x1="4" y1="12" x2="20" y2="12"></line><polyline points="13 5 20 12 13 19"></polyline></svg></span> sign, you’ll know you’ve arrived!</p>
+					<div class="clear xs"></div>
+					<div>
+						<a class="btn scroll" href="#faq">Visit FAQ's for more information</a>
+					</div>
 				</div>
 				<div class="flex-container col-lg-6 flex-col items-start justify-start gap-sm location-grid">
 					<div class="col">
-						<a href="mailto:thecozyhollowplay@gmail.com" target="_blank" rel="noreferrer" class="location email body-lg">thecozyhollowplay@gmail.com</a>	
+						<a href="https://www.google.com/maps/place/64+Hatt+St+%23203a,+Dundas,+ON+L9H+7T6/data=!4m2!3m1!1s0x882c8485d445473b:0x509c613a060f0d5?sa=X&ved=1t:242&ictx=111" target="_blank" rel="noreferrer" class="location address body-lg">64 Hatt Street, Unit 203A<br>Dundas, Ontario, L9H 7T6</a>
 					</div>
 					<div class="col">
-						<a href="https://instagram.com/cozyhollowplay" target="_blank" rel="noreferrer" class="location instagram body-lg">@cozyhollowplay</a>	
+						<a href="mailto:thecozyhollowplay@gmail.com" target="_blank" rel="noreferrer" class="location email body-lg">thecozyhollowplay@gmail.com</a>
+					</div>
+					<div class="col">
+						<a href="https://instagram.com/cozyhollowplay" target="_blank" rel="noreferrer" class="location instagram body-lg">@cozyhollowplay</a>
+					</div>
+
+					<p>If you have questions about sessions, accessibility, or programming, feel free to reach out. We’re happy to help.</p>
+				</div>
+			</div>
+
+			<div class="clear xl"></div>
+			<div id="pricing">
+				<h2 class="heading heading-lg">Pricing</h2>
+				<div class="clear sm"></div>
+				<div class="pricing-cards">
+					<div class="pricing-card">
+						<div class="pricing-card-content">
+							<p class="heading heading-md">Wednesday–Friday</p>
+							<p>9:30–11:45am or 1:30–3:45pm<br>(2 hours 15 minutes)<br><br>$24+HST (1 adult/1 child)<br>Additional Child $16.00+HST<br>Additional Adult $8.00+HST</p>
+						</div>
+						<a href="https://thecozyhollow.setmore.com?utm_source=qr-code&utm_medium=more-share-bp" class="btn btn-pricing" target="_blank" rel="noreferrer">Book Your Visit</a>
+					</div>
+					<div class="pricing-card">
+						<div class="pricing-card-content">
+							<p class="heading heading-md">Saturday</p>
+							<p>Saturday<br>9:30–11:45am or 1:30–3:45pm<br>(2 hours 15 minutes)<br><br>$28+HST (1 adult/1 child)<br>Additional Child $18.00+HST<br>Additional Adult $10.00+HST</p>
+						</div>
+						<a href="https://thecozyhollow.setmore.com?utm_source=qr-code&utm_medium=more-share-bp" class="btn btn-pricing" target="_blank" rel="noreferrer">Book Your Visit</a>
+					</div>
+					<div class="pricing-card">
+						<div class="pricing-card-content">
+							<p class="heading heading-md">Cozy 10-Pack Punch Card</p>
+							<p>Available for purchase in person at The Cozy Hollow<br><br>$250+HST<br>*4-month expiry from date of purchase</p>
+						</div>
+						<a href="https://the-cozy-hollow-an-early-childhood-collective.square.site" class="btn btn-pricing" target="_blank" rel="noreferrer">Purchase Punch Cards</a>
 					</div>
 				</div>
+				<div class="clear sm"></div>
+				<p><strong>What 1 punch covers:</strong><br>Up to 3 people total, any combination of adults + children<br><em>example:</em> 1 adult + 2 kids OR 2 adults + 1 child</p>
+				<div class="clear sm"></div>
+				<p>Infants under 1 year old are free with paid sibling admission.<br>All guests, including infants, require a signed waiver.</p>
+			</div>
 		</div>
 	</section>
 
 	<!-- FAQS -->
-	<section class="section path-faq padding-bottom-3xl padding-top-2xl bg-light-secondary relative">
+	<section id="faq" class="section path-faq padding-bottom-3xl padding-top-2xl bg-light-secondary relative">
 
 		<img src="images/ico-fox.svg" alt="" class="badge-2" />
 
@@ -265,6 +377,27 @@
 
 				<!-- ACCORDIONS -->
 				<div class="accordion-group">
+					<div class="accordion">
+						<button class="accordion-header">
+							<span class="accordion-title">Where can I park, and where is the entrance?</span>
+							<span class="accordion-icon"></span>
+						</button>
+						<div class="accordion-content">
+							<div class="accordion-content-columns">
+								<div>
+									<p>Our entrance to the building is at the corner of Hatt Street and McMurray Street on the South East corner of the intersection. There is very limited free parking in the front lot beside the entrance.</p><br />
+									<p>There is lots of additional free parking across McMurray Street in the private lot displayed in the picture below.</p><br />
+									<p>Our entrance is a little lower than street level, so you will see a slope down to the door. If you are entering from Hatt Street there is a small staircase. Please move carefully down the stairs if you choose to enter that way as it is a little steep.</p> 
+								</div>
+								<div class="flex-col gap-sm" style="width: 100%; max-width: 300px;">
+									<img src="images/parking-image.png" alt="Parking map" />
+									<p class="body-sm"><strong>P1:</strong> Very limited parking is located beside the entrance to the Cozy Hollow</p><br />
+									<p class="body-sm"><strong>P2:</strong> Additional parking is located on McMurray Street</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
 					<div class="accordion">
 						<button class="accordion-header">
 							<span class="accordion-title">What’s The Cozy Hollow?</span>
@@ -375,6 +508,32 @@
 					</div>
 				</div>
 
+				<div class="accordion">
+					<button class="accordion-header">
+						<span class="accordion-title">Washroom details</span>
+						<span class="accordion-icon"></span>
+					</button>
+					<div class="accordion-content">
+						<p>
+							Washrooms are available down the hall and to the right.<br /><br />
+							Washrooms are individual washroom stalls and there is a change table in the accessible stall.
+						</p>
+					</div>
+				</div>
+
+				<div class="accordion">
+					<button class="accordion-header">
+						<span class="accordion-title">Payment Accepted</span>
+						<span class="accordion-icon"></span>
+					</button>
+					<div class="accordion-content">
+						<p>
+							Prebooking<br /><br />
+							Debit and credit is available on site.
+						</p>
+					</div>
+				</div>
+
 				<div class="text-align-center">
 					<p class="body-lg">Have more questions? <a href="mailto:thecozyhollowplay@gmail.com" target="_blank" rel="noreferrer">Send us an Email</a>
 				</div>
@@ -383,7 +542,7 @@
 	</section>
 
 	<!-- STORY -->
-	<section class="section path-story padding-bottom-4xl padding-top-3xl bg-dark-secondary relative">
+	<section id="story" class="section path-story padding-bottom-4xl padding-top-3xl bg-dark-secondary relative">
 		<img src="images/ico-owl.svg" alt="" class="badge-3" />
 		<div class="content">
 			<div class="columns justify-between items-center wrap-xs wrap-sm">
@@ -395,21 +554,33 @@
 					<p>The Cozy Hollow was created as a place where childhood can unfold slowly, thoughtfully, and with care. It is a space rooted in curiosity, creativity, connection to nature, and the belief that children learn best through unhurried, meaningful play.</p>
 					<p>Behind The Cozy Hollow is Maggie, a Registered Early Childhood Educator with over 18 years of experience in high-quality early learning environments. She is also a Forest School Practitioner, a lifelong learner, and a parent to two young children who inspire her work every day.</p>
 					<p>Maggie brings together professional knowledge and hands-on experience to thoughtfully design spaces where children feel safe to explore, imagine, and follow their curiosity at their own pace. Her background in Early Childhood Education and development guides every aspect of The Cozy Hollow, from the layout of the space to the flow of each program.</p>
-					<div class="clear sm"></div>
+					<div class="clear xs"></div>
+					<div class="polaroid-carousel polaroid-carousel--4" style="max-width: 460px; margin: 0 auto;">
+						<div class="polaroid-carousel-slide"><img src="images/carousel/ch6.jpg" alt="The Cozy Hollow" /></div>
+						<div class="polaroid-carousel-slide"><img src="images/carousel/ch7.jpg" alt="The Cozy Hollow" /></div>
+						<div class="polaroid-carousel-slide"><img src="images/carousel/ch8.jpg" alt="The Cozy Hollow" /></div>
+						<div class="polaroid-carousel-slide"><img src="images/carousel/ch9.jpg" alt="The Cozy Hollow" /></div>
+					</div>
 				</div>
 				<div class="col col-lg-5">
 					<div class="flex-container flex-col gap-sm rule-card">
 						<h2 class="heading heading-md">The Ways of the Hollow</h2>
 						<ul>
+							<li>Please check in at the desk before entering the play space and make sure your waiver is complete.</li>
 							<li>Be Kind and Gentle: Use words and hands that respect others and keep everyone safe.</li>
-							<li>Stay Close:  Adults are present to guide and support children during play.</li>
-							<li>Food is welcome in designated snack areas however we ask that no nuts are present in food brought from home.</li> 
-							<li>Use Materials Thoughtfully:  Treat toys, tools, and materials with care and return them when finished. If something breaks let the staff know.</li> 
+							<li>Stay Close: Adults are present to guide and support children during play. Children must be supervised by their adult at all times.</li>
+							<li>Food is welcome in designated snack areas however we ask that no nuts are present in food brought from home. If you have a coffee or hot drink please use a tightly secured lid at all times.</li>
+							<li>Use Materials Thoughtfully: Treat toys, tools, and materials with care and return them when finished. If something breaks let the staff know.</li>
 							<li>Play Safely: Shoes off inside, food in designated areas, and pause when needed to keep play safe.</li>
-							<li>Care for the Hollow: Treat the space, its natural elements, and each other with respect. Rough play that could cause damage may be paused. We will start to clean up together 5 minutes before the end of the session together to promote respect for our environment and keep the space safe and clean. Please feel free to support in whatever way you feel you are able in the process.</li>
+							<li>To enter the play space both adults and children must be wearing socks.</li>
+							<li>Care for the Hollow: Treat the space, its natural elements, and each other with respect. Rough play that could cause damage may be paused.</li>
+							<li>Help Care for our Space: We will start to clean up together 5 minutes before the end of the session together to promote respect for our environment and keep the space safe and clean. Please feel free to support in whatever way you feel you are able in the process.</li>
+							<li>Beach rocks are for imaginative play and exploration. Throwing rocks or moving them from their spaces.</li>
+							<li>Materials stay in their designated play space. Please do not move from space to space with materials.</li>
+							<li>Only walking in the indoor play space between areas.</li>
+							<li>Please stay home if you or your child are unwell and visit us another day.</li>
+							<li>Tread Lightly: Please walk quietly through the halls when entering or using the washroom, as other businesses share our building.</li>
 						</ul>
-
-						<p>Together, we keep The Cozy Hollow a calm, welcoming place where children can explore, play, and imagine.</p>
 					</div>
 				</div>
 			</div>

@@ -98,3 +98,36 @@ ul.legal {
 .footer-logo {
     width: 20rem;
 }
+/* NEW SECTIONS */
+
+.book-visit {
+    flex-direction: column;
+}
+
+.book-visit-left {
+    flex: none;
+    width: 100%;
+}
+
+.notice-card {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.pricing-cards {
+    grid-template-columns: 1fr;
+}
+
+#location {
+    background-image: none;
+}
+
+.accordion-content-columns {
+    flex-direction: column;
+}
+
+.accordion-content-columns img {
+    flex: none;
+    width: 100%;
+    height: auto;
+}

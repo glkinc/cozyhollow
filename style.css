@@ -522,6 +522,14 @@ a {
     -ms-transition: all .3s ease-in-out;
 }
 
+.invert-link {
+    color: var(--role-text-highlight-dark);
+}
+
+.invert-link:hover {
+    color: var(--role-text-invert);
+}
+
 a:hover {
 	outline: 0;
     text-decoration-thickness: 0.2rem;
@@ -610,7 +618,7 @@ sub {
 }
 
 .header.nav-up {
-    top: -12rem;
+    top: -14rem;
 }
 
 .logo-small {
@@ -1727,4 +1735,473 @@ input[type="radio"] {
 .bg-dark-secondary .text-highlight,
 .bg-dark-tertiary .text-highlight {
     color: var(--role-text-highlight-dark);
+}
+
+/* SIGN TAG */
+
+.sign-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    background: var(--role-background-dark-secondary);
+    color: var(--role-text-invert);
+    padding: 8px 8px 8px 16px;
+    transform: rotate(-2deg) translateY(4px);
+    font-weight: 600;
+    font-size: 1.4rem;
+    white-space: nowrap;
+}
+
+.sign-tag-arrow {
+    width: 1.1em;
+    height: 1.1em;
+    flex-shrink: 0;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 2.5;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+/* NAV LINKS */
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2.4rem;
+}
+
+.menu ul {
+    display: flex;
+    flex-direction: row;
+    gap: 2.4rem;
+    align-items: center;
+}
+
+.menu ul li a {
+    font-size: var(--label--md);
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--role-text-interactive);
+    text-decoration: none;
+}
+
+.menu ul li a:hover {
+    color: var(--base-ochre-500);
+}
+
+/* SECONDARY BUTTON */
+
+.btn.btn-secondary {
+    background-color: var(--base-sand-100);
+    color: var(--role-text-primary);
+    border-color: var(--base-ochre-400);
+}
+
+.btn.btn-secondary:hover {
+    background-color: var(--base-ochre-500);
+    color: var(--base-white);
+    border-color: var(--base-ochre-500);
+}
+
+/* TERTIARY BUTTON (text + arrow) */
+
+.btn-tertiary {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.8rem;
+    font-size: var(--label--md);
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--role-text-highlight-dark);
+}
+
+.btn-tertiary:hover {
+    color: var(--role-text-highlight-dark);
+}
+
+.btn-tertiary img {
+    width: 2.4rem;
+    height: 2.4rem;
+    transition: transform 0.2s ease;
+}
+
+.btn-tertiary:hover img {
+    transform: translateX(0.4rem);
+}
+
+/* BOOK VISIT SECTION */
+
+.book-visit {
+    display: flex;
+    gap: 3.2rem;
+    align-items: flex-start;
+}
+
+.book-visit-left {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    flex: 0 0 48%;
+}
+
+.book-visit-actions {
+    display: flex;
+    gap: 1.6rem;
+    align-items: center;
+}
+
+/* NOTICE CARD */
+
+.notice-card {
+    flex: 1;
+    background-color: var(--role-background-light-primary);
+    color: var(--role-text-primary);
+    padding: 2.4rem 3.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.notice-card-header {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    font-weight: 700;
+    font-size: var(--body--md);
+}
+
+.notice-card-header img {
+    width: 2.4rem;
+    height: 2.4rem;
+}
+
+/* PRICING CARDS */
+
+.pricing-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3.1rem;
+    width: 100%;
+}
+
+.pricing-card {
+    background-color: var(--role-background-dark-secondary);
+    color: var(--role-text-invert);
+    padding: 2.4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2.4rem;
+}
+
+.pricing-card-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+
+/* ACCORDION WITH IMAGE */
+
+.accordion-content-columns {
+    display: flex;
+    gap: 2.4rem;
+    align-items: flex-start;
+}
+
+.accordion-content-columns img {
+    flex: 0 0 26.5rem;
+    width: 26.5rem;
+    height: 19rem;
+    object-fit: cover;
+}
+
+/* PRICING BACKGROUND PATH */
+
+#location {
+    background-image: url('images/path-pricing.svg');
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}
+
+/* PRICING CARD BUTTON (centered, no border) */
+
+.btn.btn-pricing {
+    width: 100%;
+    justify-content: center;
+    background-color: var(--base-sand-100);
+    color: var(--role-text-primary);
+    border-color: transparent;
+}
+
+.btn.btn-pricing:hover {
+    background-color: var(--base-ochre-500);
+    color: var(--base-white);
+    border-color: transparent;
+}
+
+/* HEADER SOLID BACKGROUND */
+
+.header.solid {
+    background-color: var(--base-sky-100);
+}
+
+/* HAMBURGER BUTTON */
+
+.nav-hamburger {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.4rem;
+    width: 3.2rem;
+    height: 3.2rem;
+    position: relative;
+    flex-shrink: 0;
+}
+
+.nav-hamburger span {
+    display: block;
+    position: absolute;
+    height: 0.25rem;
+    width: 100%;
+    background-color: var(--role-text-interactive);
+    border-radius: 2px;
+    left: 0;
+    transition: transform 0.3s ease, opacity 0.3s ease, top 0.3s ease;
+}
+
+.nav-hamburger span:nth-child(1) { top: 20%; }
+.nav-hamburger span:nth-child(2) { top: 50%; transform: translateY(-50%); }
+.nav-hamburger span:nth-child(3) { top: 80%; transform: translateY(-100%); }
+
+.nav-hamburger.is-open span:nth-child(1) {
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+}
+
+.nav-hamburger.is-open span:nth-child(2) {
+    opacity: 0;
+    transform: translateY(-50%) scaleX(0);
+}
+
+.nav-hamburger.is-open span:nth-child(3) {
+    top: 50%;
+    transform: translateY(-50%) rotate(-45deg);
+}
+
+/* FULLSCREEN NAV OVERLAY */
+
+.nav-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background-color: var(--base-sky-100);
+    z-index: 998;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3.2rem;
+    opacity: 0;
+    transform: translateY(-1rem);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.nav-overlay.is-open {
+    display: flex;
+}
+
+.nav-overlay.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.nav-overlay ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3.2rem;
+    list-style: none;
+}
+
+.nav-overlay ul li a {
+    font-size: 2.4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--role-text-interactive);
+}
+
+.nav-overlay ul li a:hover {
+    color: var(--base-ochre-500);
+}
+
+/* RESPONSIVE HEADER @ 1200px */
+
+@media (max-width: 1200px) {
+    .menu {
+        display: none;
+    }
+
+    .header-right {
+        display: flex;
+        align-items: center;
+        gap: 1.2rem;
+    }
+
+    .nav-hamburger {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .btn.btn-sm {
+        padding: 0.8rem 2rem;
+        font-size: 1.4rem;
+    }
+}
+
+.header-right {
+    display: none;
+}
+
+@media (max-width: 1200px) {
+    .header-right {
+        display: flex;
+    }
+}
+
+/* ========================================================================== *\
+   POLAROID CAROUSEL
+\* ========================================================================== */
+
+.polaroid-carousel {
+	position: relative;
+	width: 100%;
+	min-width: 20rem;
+	aspect-ratio: 1 / 1;
+	overflow: hidden;
+}
+
+/* The carousel's own children are all position:absolute, so it has no
+   in-flow content to give its parent column an intrinsic width. Without
+   this, the column collapses to 0 and the carousel disappears anywhere
+   the grid doesn't set an explicit column width (i.e. below 1141px).
+   Its sibling column needs the same treatment: a flex item with only
+   flex-basis:0 opts out of the shrink calculation, so if the sibling's
+   text content isn't also allowed to shrink, it claims the whole row
+   and still leaves the carousel at 0. */
+@media screen and (max-width: 1140px) {
+	.columns-carousel > .col {
+		flex: 1 1 0%;
+		min-width: 0;
+		width: 100%;
+	}
+}
+
+/* wrap-xs stacks columns below 600px; give each the full row so they
+   actually stack instead of splitting the row 50/50. */
+@media screen and (max-width: 600px) {
+	.columns-carousel > .col {
+		flex: 1 1 100%;
+	}
+}
+
+.polaroid-carousel-slide {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+	will-change: transform, opacity;
+}
+
+.polaroid-carousel-slide img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border: 10px solid #fff;
+	box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
+	box-sizing: border-box;
+}
+
+.polaroid-carousel-slide:nth-child(1) { animation-delay: 0s; }
+.polaroid-carousel-slide:nth-child(2) { animation-delay: -3s; }
+.polaroid-carousel-slide:nth-child(3) { animation-delay: -6s; }
+.polaroid-carousel-slide:nth-child(4) { animation-delay: -9s; }
+.polaroid-carousel-slide:nth-child(5) { animation-delay: -12s; }
+.polaroid-carousel-slide:nth-child(6) { animation-delay: -15s; }
+.polaroid-carousel-slide:nth-child(7) { animation-delay: -18s; }
+.polaroid-carousel-slide:nth-child(8) { animation-delay: -21s; }
+.polaroid-carousel-slide:nth-child(9) { animation-delay: -24s; }
+
+/* The settled/visible frame sits at rotate(0) scale(1) so it exactly fills
+   the container and never clips against overflow: hidden. Only the
+   entry/exit frames tilt, and they do so at a reduced scale so their
+   rotated bounding box still stays within the container. */
+.polaroid-carousel--5 .polaroid-carousel-slide {
+	animation-name: polaroidFlip5;
+	animation-duration: 15s;
+}
+
+.polaroid-carousel--4 .polaroid-carousel-slide {
+	animation-name: polaroidFlip4;
+	animation-duration: 12s;
+}
+
+@keyframes polaroidFlip5 {
+	0%,
+	100% {
+		opacity: 0;
+		transform: rotate(9deg) scale(0.85) translateY(18px);
+		z-index: 1;
+	}
+	2.4%,
+	17% {
+		opacity: 1;
+		transform: rotate(0) scale(1) translateY(0);
+		z-index: 5;
+	}
+	19% {
+		opacity: 0;
+		transform: rotate(-9deg) scale(0.85) translateY(-18px);
+		z-index: 1;
+	}
+}
+
+@keyframes polaroidFlip4 {
+	0%,
+	100% {
+		opacity: 0;
+		transform: rotate(9deg) scale(0.85) translateY(18px);
+		z-index: 1;
+	}
+	3%,
+	21.25% {
+		opacity: 1;
+		transform: rotate(0) scale(1) translateY(0);
+		z-index: 5;
+	}
+	23.75% {
+		opacity: 0;
+		transform: rotate(-9deg) scale(0.85) translateY(-18px);
+		z-index: 1;
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.polaroid-carousel-slide {
+		animation: none;
+	}
+
+	.polaroid-carousel-slide:nth-child(1) {
+		opacity: 1;
+		transform: none;
+	}
 }

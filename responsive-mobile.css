@@ -180,3 +180,40 @@ ul.social {
 .path-mailing {
     display: none;
 }
+/* NEW SECTIONS */
+
+.book-visit {
+    flex-direction: column;
+}
+
+.book-visit-left {
+    flex: none;
+    width: 100%;
+}
+
+.book-visit-actions {
+    flex-wrap: wrap;
+}
+
+.notice-card {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.pricing-cards {
+    grid-template-columns: 1fr;
+}
+
+#location {
+    background-image: none;
+}
+
+.accordion-content-columns {
+    flex-direction: column;
+}
+
+.accordion-content-columns img {
+    flex: none;
+    width: 100%;
+    height: auto;
+}
